@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="onStarts()">
+    
+    <div class="card">
+        <div class="search_part">
+        <input id="cityNames" type="text"  placeholder="enter your city">
+        <button onclick="searchButton()" >
+            <img onclick="searchButton()" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png" alt="">
+        </button>
+        </div>
+        <div class="details">
+            <img src="rain.png" alt="">
+            <h1 id="currentTemp">11°C</h1>
+            <h2 id="postCity"></h2>
+        </div>
+        <div class="footer">
+            <div class="col">
+                <div class="col_image">
+                    <img src="water-drop (1).png" alt="">
+                </div>
+                <div class="humidity_details">
+                    <h4 id="humidityPercent"></h4>
+                    <p>Humidity</p>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="col_image">
+                    <img src="wind.png" alt="">
+                </div>
+                <div class="humidity_details">
+                    <h4 id="windSpeed">20 km/h</h4>
+                    <p>Wind Speed</p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
