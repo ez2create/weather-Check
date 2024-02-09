@@ -30,7 +30,7 @@ fetch(urlIs)
         const gotData = data;
         const currentTem= Math.round(gotData.main.temp)
         const humidity = gotData.main.humidity
-        const windSpeed = gotData.wind.speed 
+        const windSpeed = gotData.wind.speed+ 6.4
         document.getElementById("currentTemp").innerHTML= currentTem+"°C";
         document.getElementById("humidityPercent").innerText=humidity +"%";
         document.getElementById("windSpeed").innerHTML = windSpeed+" km/h"
